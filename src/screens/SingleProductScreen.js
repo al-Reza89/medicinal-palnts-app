@@ -18,10 +18,26 @@ const SingleProductScreen = ({ navigation, route }) => {
   return (
     <View
       style={{
-        backgroundColor: "green",
         flex: 1,
       }}
     >
+      <View
+        style={{
+          height: "50%",
+          width: "100%",
+          position: "absolute",
+          objectFit: "cover",
+        }}
+      >
+        <Image
+          source={item.image}
+          style={{
+            height: "100%",
+            width: "100%",
+            resizeMode: "cover",
+          }}
+        />
+      </View>
       <SafeAreaView>
         <Pressable
           onPress={() => navigation.goBack()}
@@ -37,35 +53,17 @@ const SingleProductScreen = ({ navigation, route }) => {
         style={{
           backgroundColor: "#fff",
           flex: 1,
-          marginTop: 180,
+          marginTop: "80%",
           borderTopLeftRadius: 56,
           borderTopRightRadius: 56,
           alignItems: "center",
         }}
       >
-        <View
-          style={{
-            height: 300,
-            width: 300,
-            position: "absolute",
-            top: -150,
-          }}
-        >
-          <Image
-            source={item.image}
-            style={{
-              height: "100%",
-              width: "100%",
-              resizeMode: "contain",
-            }}
-          />
-        </View>
-        {/* name of tree */}
         <Text
           style={{
             fontSize: 32,
             fontWeight: "bold",
-            marginTop: 150,
+            marginTop: 30,
           }}
         >
           {item.scientificName}
@@ -76,8 +74,6 @@ const SingleProductScreen = ({ navigation, route }) => {
           }}
         >
           <ScrollView showsVerticalScrollIndicator={false}>
-            {/* description */}
-
             <Text
               style={{
                 fontSize: 20,

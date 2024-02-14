@@ -36,13 +36,20 @@ const SingleCategoryCard = ({ category }) => {
               marginVertical: 10,
             }}
           >
-            <Text>{item.category}</Text>
+            <Text
+              style={{
+                paddingLeft: 8,
+              }}
+            >
+              {item.category}
+            </Text>
             <Image
               source={item.image}
               style={{
                 width: 120,
                 height: 120,
                 resizeMode: "center",
+                borderRadius: 16,
               }}
             />
           </Pressable>

@@ -12,6 +12,7 @@ import SearchFilter from "../components/SearchFilter";
 import { useNavigation } from "@react-navigation/native";
 import CategoryCard from "../components/CategoryCard";
 import SingleCategoryCard from "../components/SingleCategoryCard";
+import HeaderDescription from "../components/HeaderDescription";
 
 const SingleCategoryScreen = ({ route }) => {
   const navigation = useNavigation();
@@ -29,6 +30,7 @@ const SingleCategoryScreen = ({ route }) => {
     >
       {/* header  */}
       <Header headerText="Home" headerIcon="home" />
+      <HeaderDescription />
       {/* search filter */}
       <Pressable onPress={() => navigation.navigate("Search")}>
         <SearchFilter icon="search" placeholder="Search" />

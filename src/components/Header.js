@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
 
@@ -16,16 +16,46 @@ const Header = ({ headerText, headerIcon }) => {
           alignItems: "center",
         }}
       >
-        <FontAwesome name="home" size={24} color="#f96163" />
-        <Text>GOVT.</Text>
+        <Image
+          source={require("../../assets/images/govt.png")}
+          style={{
+            width: 40,
+            height: 40,
+            resizeMode: "center",
+            borderRadius: 16,
+          }}
+        />
+        <Text
+          style={{
+            fontSize: 12,
+            fontWeight: "bold",
+          }}
+        >
+          GOVT.
+        </Text>
       </View>
       <View
         style={{
           alignItems: "center",
         }}
       >
-        <FontAwesome name="home" size={24} color="#f96163" />
-        <Text>BFRI</Text>
+        <Image
+          source={require("../../assets/images/bfri.png")}
+          style={{
+            width: 40,
+            height: 40,
+            resizeMode: "center",
+            borderRadius: 16,
+          }}
+        />
+        <Text
+          style={{
+            fontSize: 12,
+            fontWeight: "bold",
+          }}
+        >
+          BFRI
+        </Text>
       </View>
     </View>
   );

@@ -31,7 +31,7 @@ const CategoryCard = () => {
               borderRadius: 16,
               marginVertical: 16,
               alignItems: "center",
-              paddingHorizontal: 8,
+              paddingHorizontal: 12,
               paddingVertical: 26,
             }}
           >
@@ -41,6 +41,8 @@ const CategoryCard = () => {
                 width: 150,
                 height: 150,
                 resizeMode: "center",
+                borderRadius: 16,
+                marginBottom: 16,
               }}
             />
             <Text>{item.category}</Text>
