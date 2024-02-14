@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 import HomeScreen from "../screens/HomeScreen";
 import SingleCategoryScreen from "../screens/SingleCategoryScreen";
 import SearchScreen from "../screens/SearchScreen";
+import SingleProductScreen from "../screens/SingleProductScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +14,8 @@ const AppNavigator = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />
-        <Stack.Screen name="category" component={SingleCategoryScreen} />
+        <Stack.Screen name="SingleCategory" component={SingleCategoryScreen} />
+        <Stack.Screen name="SingleProduct" component={SingleProductScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

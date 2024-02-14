@@ -8,15 +8,24 @@ const Header = ({ headerText, headerIcon }) => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
+        paddingTop: 10,
       }}
     >
-      <View style={{}}>
-        <Text>{headerText}</Text>
+      <View
+        style={{
+          alignItems: "center",
+        }}
+      >
         <FontAwesome name="home" size={24} color="#f96163" />
+        <Text>GOVT.</Text>
       </View>
-      <View style={{}}>
-        <Text>{headerText}</Text>
+      <View
+        style={{
+          alignItems: "center",
+        }}
+      >
         <FontAwesome name="home" size={24} color="#f96163" />
+        <Text>BFRI</Text>
       </View>
     </View>
   );
