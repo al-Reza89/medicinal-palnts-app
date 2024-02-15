@@ -16,22 +16,38 @@ import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { colors, trees } from "../Constant";
 
-const SearchScreen = () => {
+const SearchScreen = ({ route }) => {
+  const { category } = route.params;
   const searchInputRef = useRef(null);
   const navigation = useNavigation();
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredResults, setFilteredResults] = useState([]);
 
+  console.log({ category: category });
+
   const handleSearch = (text) => {
     setSearchQuery(text);
 
-    const filtered = trees.filter(
-      (tree) =>
-        tree.bengaliName.toLowerCase().includes(text.toLowerCase()) ||
-        tree.scientificName.toLowerCase().includes(text.toLowerCase()) ||
-        tree.family.toLowerCase().includes(text.toLowerCase())
-    );
-    setFilteredResults(filtered);
+    if (category === "all") {
+      const filtered = trees.filter(
+        (tree) =>
+          tree.bengaliName.toLowerCase().includes(text.toLowerCase()) ||
+          tree.scientificName.toLowerCase().includes(text.toLowerCase()) ||
+          tree.family.toLowerCase().includes(text.toLowerCase())
+      );
+      setFilteredResults(filtered);
+      return;
+    } else {
+      const filtered = trees.filter(
+        (tree) =>
+          tree.category === category &&
+          (tree.bengaliName.toLowerCase().includes(text.toLowerCase()) ||
+            tree.scientificName.toLowerCase().includes(text.toLowerCase()) ||
+            tree.family.toLowerCase().includes(text.toLowerCase()))
+      );
+      setFilteredResults(filtered);
+      return;
+    }
   };
 
   useEffect(() => {

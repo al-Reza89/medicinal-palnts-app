@@ -29,7 +29,9 @@ const HomeScreen = ({ navigation }) => {
       <Header />
       <HeaderDescription />
       {/* search filter */}
-      <Pressable onPress={() => navigation.navigate("Search")}>
+      <Pressable
+        onPress={() => navigation.navigate("Search", { category: "all" })}
+      >
         <SearchFilter
           icon="search"
           placeholder="গাছের নাম/রোগের নাম দিয়ে খুজুন"
