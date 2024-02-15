@@ -61,9 +61,10 @@ const SingleProductScreen = ({ navigation, route }) => {
       >
         <Text
           style={{
-            fontSize: 32,
+            fontSize: 23,
             fontWeight: "bold",
             marginTop: 30,
+            paddingHorizontal: 10,
           }}
         >
           {item.scientificName}
@@ -76,8 +77,59 @@ const SingleProductScreen = ({ navigation, route }) => {
           <ScrollView showsVerticalScrollIndicator={false}>
             <Text
               style={{
-                fontSize: 20,
-                marginVertical: 16,
+                fontSize: 16,
+                marginVertical: 8,
+                paddingHorizontal: 20,
+                textAlign: "center",
+              }}
+            >
+              Bengali Name: {item.bengaliName}
+            </Text>
+            <Text
+              style={{
+                fontSize: 16,
+                marginVertical: 8,
+                paddingHorizontal: 20,
+                textAlign: "center",
+              }}
+            >
+              Family: {item.family}
+            </Text>
+            <Text
+              style={{
+                fontSize: 16,
+                marginVertical: 8,
+                paddingHorizontal: 20,
+                textAlign: "center",
+              }}
+            >
+              Category: {item.category}
+            </Text>
+            <Text
+              style={{
+                fontSize: 16,
+                marginVertical: 8,
+                paddingHorizontal: 20,
+                textAlign: "center",
+              }}
+            >
+              Method Of Propagation: {item.methodOfPropagation}
+            </Text>
+            <Text
+              style={{
+                fontSize: 16,
+                marginVertical: 8,
+                paddingHorizontal: 20,
+                textAlign: "center",
+              }}
+            >
+              Used Part: {item.usedPart}
+            </Text>
+
+            <Text
+              style={{
+                fontSize: 14,
+                marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
               }}
