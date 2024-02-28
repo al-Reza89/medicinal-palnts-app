@@ -31,7 +31,7 @@ const SearchScreen = ({ route }) => {
     if (category === "all") {
       const filtered = trees.filter(
         (tree) =>
-          tree.bengaliName.toLowerCase().includes(text.toLowerCase()) ||
+          tree.bengaliName.includes(text) ||
           tree.scientificName.toLowerCase().includes(text.toLowerCase()) ||
           tree.family.toLowerCase().includes(text.toLowerCase())
       );
@@ -41,7 +41,7 @@ const SearchScreen = ({ route }) => {
       const filtered = trees.filter(
         (tree) =>
           tree.category === category &&
-          (tree.bengaliName.toLowerCase().includes(text.toLowerCase()) ||
+          (tree.bengaliName.includes(text) ||
             tree.scientificName.toLowerCase().includes(text.toLowerCase()) ||
             tree.family.toLowerCase().includes(text.toLowerCase()))
       );

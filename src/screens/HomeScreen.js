@@ -37,18 +37,7 @@ const HomeScreen = ({ navigation }) => {
           placeholder="গাছের নাম/রোগের নাম দিয়ে খুজুন"
         />
       </Pressable>
-      {/* <View style={{ marginTop: 10 }}>
-        <Text
-          style={{
-            fontSize: 22,
-            fontWeight: "bold",
-          }}
-        >
-          Categories
-        </Text>
-        <CategoriesFilter />
-      </View> */}
-      {/* categories Card */}
+
       <View style={{ marginTop: 10, flex: 1 }}>
         <Text
           style={{

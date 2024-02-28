@@ -40,7 +40,7 @@ const CategoryCard = () => {
               style={{
                 width: 150,
                 height: 150,
-                resizeMode: "center",
+                resizeMode: "stretch",
                 borderRadius: 16,
                 marginBottom: 16,
               }}

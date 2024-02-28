@@ -13,7 +13,7 @@ import { FontAwesome5 } from "@expo/vector-icons";
 const SingleProductScreen = ({ navigation, route }) => {
   const { item } = route.params;
 
-  console.log(item);
+  console.log(item.id);
 
   return (
     <View
@@ -34,7 +34,7 @@ const SingleProductScreen = ({ navigation, route }) => {
           style={{
             height: "100%",
             width: "100%",
-            resizeMode: "cover",
+            resizeMode: "stretch",
           }}
         />
       </View>
@@ -46,7 +46,7 @@ const SingleProductScreen = ({ navigation, route }) => {
             paddingLeft: 10,
           }}
         >
-          <FontAwesome5 name="arrow-circle-left" size={24} color="black" />
+          <FontAwesome5 name="arrow-circle-left" size={24} color="white" />
         </Pressable>
       </SafeAreaView>
       <View
@@ -54,8 +54,8 @@ const SingleProductScreen = ({ navigation, route }) => {
           backgroundColor: "#fff",
           flex: 1,
           marginTop: "80%",
-          borderTopLeftRadius: 56,
-          borderTopRightRadius: 56,
+          borderTopLeftRadius: 30,
+          borderTopRightRadius: 30,
           alignItems: "center",
         }}
       >
