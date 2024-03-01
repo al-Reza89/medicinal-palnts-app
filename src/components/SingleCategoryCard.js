@@ -49,7 +49,37 @@ const SingleCategoryCard = ({ category }) => {
           borderRadius: 16,
         }}
       />
-      <Text style={{ paddingRight: 8 }}>{item.bengaliName}</Text>
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "flex-end",
+        }}
+      >
+        <Text
+          style={{
+            paddingRight: 8,
+            fontSize: 16,
+            fontWeight: "bold",
+            color: colors.COLOR_PRIMARY,
+          }}
+        >
+          {item.bengaliName}
+        </Text>
+        <Text
+          style={{
+            paddingRight: 8,
+            fontSize: 13,
+            fontWeight: "bold",
+            color: colors.COLOR_DARK,
+          }}
+        >
+          {item.scientificName.length > 20
+            ? `${item.scientificName.slice(0, 20)}...`
+            : item.scientificName}
+        </Text>
+      </View>
     </Pressable>
   );
 

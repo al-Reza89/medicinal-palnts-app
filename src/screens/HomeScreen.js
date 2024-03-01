@@ -15,6 +15,7 @@ import SearchFilter from "../components/SearchFilter";
 import CategoriesFilter from "../components/CategoriesFilter";
 import CategoryCard from "../components/CategoryCard";
 import HeaderDescription from "../components/HeaderDescription";
+import { colors } from "../Constant";
 
 const HomeScreen = ({ navigation }) => {
   return (

@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import React from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { colors } from "../Constant";
 
 const SingleProductScreen = ({ navigation, route }) => {
   const { item } = route.params;
@@ -65,6 +66,7 @@ const SingleProductScreen = ({ navigation, route }) => {
             fontWeight: "bold",
             marginTop: 30,
             paddingHorizontal: 10,
+            color: colors.COLOR_PRIMARY,
           }}
         >
           {item.scientificName}
@@ -81,6 +83,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                 marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
+                fontWeight: "bold",
               }}
             >
               Bengali Name: {item.bengaliName}
@@ -91,6 +94,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                 marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
+                fontWeight: "bold",
               }}
             >
               Family: {item.family}
@@ -101,6 +105,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                 marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
+                fontWeight: "bold",
               }}
             >
               Category: {item.category}
@@ -111,6 +116,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                 marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
+                fontWeight: "bold",
               }}
             >
               Method Of Propagation: {item.methodOfPropagation}
@@ -121,6 +127,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                 marginVertical: 8,
                 paddingHorizontal: 20,
                 textAlign: "center",
+                fontWeight: "bold",
               }}
             >
               Used Part: {item.usedPart}

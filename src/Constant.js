@@ -1,5 +1,5 @@
 export const colors = {
-  COLOR_PRIMARY: "#f96163",
+  COLOR_PRIMARY: "#00693E",
   COLOR_LIGHT: "#fff",
   COLOR_DARK: "#000",
   COLOR_DARK_ALT: "#262626",
@@ -12,21 +12,25 @@ export const categories = [
     id: "01",
     image: require("../assets/images/trees/10.jpg"),
     category: "বীরুৎ",
+    name: "বীরুৎ/Herb",
   },
   {
     id: "02",
     image: require("../assets/images/trees/29.jpg"),
     category: "গুল্ম",
+    name: "গুল্ম/Shrub",
   },
   {
     id: "03",
     image: require("../assets/images/trees/31.jpg"),
     category: "আরোহী",
+    name: "আরোহী/Climber",
   },
   {
     id: "04",
     image: require("../assets/images/trees/4.jpg"),
     category: "বৃক্ষ",
+    name: "বৃক্ষ/Tree",
   },
 ];
 

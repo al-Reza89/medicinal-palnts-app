@@ -45,7 +45,15 @@ const CategoryCard = () => {
                 marginBottom: 16,
               }}
             />
-            <Text>{item.category}</Text>
+            <Text
+              style={{
+                fontSize: 16,
+                fontWeight: "bold",
+                color: colors.COLOR_PRIMARY,
+              }}
+            >
+              {item.name}
+            </Text>
           </Pressable>
         )}
         numColumns={2}

@@ -139,6 +139,9 @@ const SearchScreen = ({ route }) => {
                 <Text
                   style={{
                     paddingLeft: 8,
+                    fontSize: 16,
+                    fontWeight: "bold",
+                    color: colors.COLOR_PRIMARY,
                   }}
                 >
                   {item.bengaliName}
@@ -146,6 +149,9 @@ const SearchScreen = ({ route }) => {
                 <Text
                   style={{
                     paddingLeft: 8,
+                    fontSize: 13,
+                    fontWeight: "bold",
+                    color: colors.COLOR_DARK,
                   }}
                 >
                   {item.scientificName.length > 20
@@ -155,9 +161,11 @@ const SearchScreen = ({ route }) => {
                 <Text
                   style={{
                     paddingLeft: 8,
+                    fontSize: 13,
+                    fontWeight: "bold",
+                    color: colors.COLOR_DARK,
                   }}
                 >
-                  {" "}
                   Family:{" "}
                   {item.family.length > 15
                     ? `${item.family.substring(0, 20)}...`
@@ -170,7 +178,7 @@ const SearchScreen = ({ route }) => {
                 style={{
                   width: 120,
                   height: 120,
-                  resizeMode: "center",
+                  resizeMode: "stretch",
                   borderRadius: 16,
                 }}
               />
