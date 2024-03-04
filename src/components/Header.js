@@ -19,15 +19,15 @@ const Header = ({ headerText, headerIcon }) => {
         <Image
           source={require("../../assets/images/govt.png")}
           style={{
-            width: 40,
-            height: 40,
+            width: 50,
+            height: 50,
             resizeMode: "center",
             borderRadius: 16,
           }}
         />
         <Text
           style={{
-            fontSize: 12,
+            fontSize: 16,
             fontWeight: "bold",
           }}
         >
@@ -42,15 +42,15 @@ const Header = ({ headerText, headerIcon }) => {
         <Image
           source={require("../../assets/images/bfri.png")}
           style={{
-            width: 40,
-            height: 40,
+            width: 50,
+            height: 50,
             resizeMode: "center",
             borderRadius: 16,
           }}
         />
         <Text
           style={{
-            fontSize: 12,
+            fontSize: 16,
             fontWeight: "bold",
           }}
         >

@@ -6,14 +6,35 @@ const HeaderDescription = () => {
     <View
       style={{
         alignItems: "center",
-        fontSize: 22,
-        fontWeight: "bold",
-        fontColor: "green",
       }}
     >
-      <Text>রোগ নিরাময় ঔষধি উদ্ভিদ</Text>
-      <Text>Presented By</Text>
-      <Text>বাংলাদেশ বন গবেষণা ইনিস্টিউট, চট্টগ্রাম</Text>
+      <Text
+        style={{
+          fontSize: 25,
+          fontWeight: "bold",
+          color: "green",
+        }}
+      >
+        রোগ নিরাময় ঔষধি উদ্ভিদ
+      </Text>
+      <Text
+        style={{
+          fontSize: 16,
+          fontWeight: "bold",
+          color: "green",
+        }}
+      >
+        Presented By
+      </Text>
+      <Text
+        style={{
+          fontSize: 16,
+          fontWeight: "bold",
+          color: "green",
+        }}
+      >
+        বাংলাদেশ বন গবেষণা ইনিস্টিউট, চট্টগ্রাম
+      </Text>
     </View>
   );
 };

@@ -30,8 +30,6 @@ const SingleCategoryScreen = ({ route }) => {
     >
       {/* header  */}
       <Header headerText="Home" headerIcon="home" />
-      <HeaderDescription />
-      {/* search filter */}
       <Pressable
         onPress={() => navigation.navigate("Search", { category: category })}
       >

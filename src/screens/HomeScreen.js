@@ -22,7 +22,7 @@ const HomeScreen = ({ navigation }) => {
     <SafeAreaView
       style={{
         flex: 1,
-        paddingTop: Platform.OS === "android" ? 38 : 0,
+        paddingTop: Platform.OS === "android" ? 32 : 0,
         marginHorizontal: 16,
       }}
     >

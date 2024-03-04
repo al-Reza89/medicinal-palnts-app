@@ -13,54 +13,59 @@ import { useNavigation } from "@react-navigation/native";
 const CategoryCard = () => {
   const navigation = useNavigation();
 
+  const renderCategoryItem = ({ item }) => (
+    <Pressable
+      onPress={() =>
+        navigation.navigate("SingleCategory", { category: item.category })
+      }
+      style={{
+        backgroundColor: colors.COLOR_LIGHT,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.1,
+        shadowRadius: 7,
+        borderRadius: 12,
+        marginVertical: 16,
+        alignItems: "center",
+        paddingHorizontal: 14,
+        paddingVertical: 16,
+      }}
+    >
+      <Image
+        source={item.image}
+        style={{
+          width: 130,
+          height: 120,
+          resizeMode: "stretch",
+          borderRadius: 12,
+          marginBottom: 12,
+        }}
+      />
+      <Text
+        style={{
+          fontSize: 16,
+          fontWeight: "bold",
+          color: colors.COLOR_PRIMARY,
+        }}
+      >
+        {item.name}
+      </Text>
+    </Pressable>
+  );
+
+  // const renderSeparator = () => <View style={{ width: 18 }} />;
+
   return (
     <View>
       <FlatList
         data={categories}
-        renderItem={({ item }) => (
-          <Pressable
-            onPress={() =>
-              navigation.navigate("SingleCategory", { category: item.category })
-            }
-            style={{
-              backgroundColor: colors.COLOR_LIGHT,
-              shadowColor: "#000",
-              shadowOffset: { width: 0, height: 3 },
-              shadowOpacity: 0.1,
-              shadowRadius: 7,
-              borderRadius: 16,
-              marginVertical: 16,
-              alignItems: "center",
-              paddingHorizontal: 12,
-              paddingVertical: 26,
-            }}
-          >
-            <Image
-              source={item.image}
-              style={{
-                width: 150,
-                height: 150,
-                resizeMode: "stretch",
-                borderRadius: 16,
-                marginBottom: 16,
-              }}
-            />
-            <Text
-              style={{
-                fontSize: 16,
-                fontWeight: "bold",
-                color: colors.COLOR_PRIMARY,
-              }}
-            >
-              {item.name}
-            </Text>
-          </Pressable>
-        )}
+        renderItem={renderCategoryItem}
         numColumns={2}
         columnWrapperStyle={{
-          justifyContent: "space-between",
+          justifyContent: "space-around",
         }}
         showsVerticalScrollIndicator={false}
+        // ItemSeparatorComponent={renderSeparator}
       />
     </View>
   );

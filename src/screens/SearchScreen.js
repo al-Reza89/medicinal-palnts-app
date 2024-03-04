@@ -69,7 +69,6 @@ const SearchScreen = ({ route }) => {
       }}
     >
       <Header headerText="Home" headerIcon="home" />
-      <HeaderDescription />
       <View
         style={{
           backgroundColor: "#fff",
