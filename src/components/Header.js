@@ -8,7 +8,7 @@ const Header = ({ headerText, headerIcon }) => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-        paddingTop: 10,
+        paddingTop: 12,
       }}
     >
       <View

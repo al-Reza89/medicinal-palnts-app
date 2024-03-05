@@ -25,17 +25,17 @@ const CategoryCard = () => {
         shadowOpacity: 0.1,
         shadowRadius: 7,
         borderRadius: 12,
-        marginVertical: 16,
+        marginVertical: 14,
         alignItems: "center",
-        paddingHorizontal: 14,
-        paddingVertical: 16,
+        paddingHorizontal: 10,
+        paddingVertical: 14,
       }}
     >
       <Image
         source={item.image}
         style={{
-          width: 130,
-          height: 120,
+          width: 120,
+          height: 110,
           resizeMode: "stretch",
           borderRadius: 12,
           marginBottom: 12,
@@ -43,7 +43,7 @@ const CategoryCard = () => {
       />
       <Text
         style={{
-          fontSize: 16,
+          fontSize: 15,
           fontWeight: "bold",
           color: colors.COLOR_PRIMARY,
         }}

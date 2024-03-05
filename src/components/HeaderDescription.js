@@ -6,6 +6,8 @@ const HeaderDescription = () => {
     <View
       style={{
         alignItems: "center",
+        paddingTop: 12,
+        paddingBottom: 12,
       }}
     >
       <Text

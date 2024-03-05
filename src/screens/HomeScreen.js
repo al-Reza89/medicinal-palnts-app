@@ -39,14 +39,14 @@ const HomeScreen = ({ navigation }) => {
         />
       </Pressable>
 
-      <View style={{ marginTop: 10, flex: 1 }}>
+      <View style={{ flex: 1 }}>
         <Text
           style={{
             fontSize: 22,
             fontWeight: "bold",
           }}
         >
-          Categories
+          গাছের ধরণ
         </Text>
         <CategoryCard />
       </View>

@@ -29,7 +29,7 @@ const SingleCategoryCard = ({ category }) => {
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.1,
         shadowRadius: 7,
-        borderRadius: 16,
+        borderRadius: 13,
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
@@ -44,9 +44,9 @@ const SingleCategoryCard = ({ category }) => {
         alt="tree"
         style={{
           width: 120,
-          height: 120,
+          height: 110,
           resizeMode: "stretch",
-          borderRadius: 16,
+          borderRadius: 13,
         }}
       />
       <View
