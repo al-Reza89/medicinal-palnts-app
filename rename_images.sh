@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the directory containing the image files
-cd ~/Documents/projects/medicinal-plants-app/assets/images/trees
+cd ~/Documents/projects/medicinal-plants-app/assets/trees
 
 # Check if there are JPG files to rename
 if ls *.JPG 1> /dev/null 2>&1; then

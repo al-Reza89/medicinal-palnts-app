@@ -26,6 +26,7 @@ const SingleCategoryScreen = ({ route }) => {
       <Appbar.Header
         style={{
           backgroundColor: "#fff",
+          paddingTop: 4,
         }}
       >
         <Appbar.BackAction onPress={() => navigation.goBack()} />
@@ -43,11 +44,14 @@ const SingleCategoryScreen = ({ route }) => {
         <Pressable
           onPress={() => navigation.navigate("Search", { category: category })}
         >
-          <SearchFilter icon="search" placeholder="Search" />
+          <SearchFilter
+            icon="search"
+            placeholder="গাছের নাম/রোগের নাম দিয়ে খুজুন..."
+          />
         </Pressable>
         {/* categories Card */}
         <View style={{ marginTop: 10, flex: 1 }}>
-          <Text
+          {/* <Text
             style={{
               fontSize: 22,
               fontWeight: "bold",
@@ -55,7 +59,7 @@ const SingleCategoryScreen = ({ route }) => {
             }}
           >
             Categories
-          </Text>
+          </Text> */}
           <SingleCategoryCard category={category} />
         </View>
       </SafeAreaView>
