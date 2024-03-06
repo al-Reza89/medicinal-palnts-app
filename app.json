@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "medicinal-plants-app",
+    "name": "রোগ নিরাময়ে ঔষধি উদ্ভিদ",
     "slug": "medicinal-plants-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },

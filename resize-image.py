@@ -26,7 +26,7 @@ for filename in glob.glob(os.path.join(input_directory, '*.jpg')):
         os.remove(output_filename)
 
     # Control the quality of the saved JPEG image (0-100)
-    resized_image.save(output_filename, quality=90)  # Adjust quality as per your requirement
+    resized_image.save(output_filename, quality=100)  # Adjust quality as per your requirement
     print(f"Resized and saved {output_filename}")
 
 print("All images resized and saved.")

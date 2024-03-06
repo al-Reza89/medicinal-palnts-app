@@ -25,14 +25,6 @@ const Header = ({ headerText, headerIcon }) => {
             borderRadius: 16,
           }}
         />
-        <Text
-          style={{
-            fontSize: 16,
-            fontWeight: "bold",
-          }}
-        >
-          GOVT.
-        </Text>
       </View>
       <View
         style={{
@@ -48,14 +40,6 @@ const Header = ({ headerText, headerIcon }) => {
             borderRadius: 16,
           }}
         />
-        <Text
-          style={{
-            fontSize: 16,
-            fontWeight: "bold",
-          }}
-        >
-          BFRI
-        </Text>
       </View>
     </View>
   );

@@ -71,9 +71,6 @@ const SingleProductScreen = ({ navigation, route }) => {
             style={{
               backgroundColor: "#fff",
               flex: 1,
-              // marginTop: "110%",
-              borderTopLeftRadius: 30,
-              borderTopRightRadius: 30,
               alignItems: "center",
             }}
           >
@@ -108,7 +105,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  Bengali Name: {item.bengaliName}
+                  বাংলা নামঃ {item.bengaliName}
                 </Text>
                 <Text
                   style={{
@@ -119,7 +116,11 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  Family: {item.family}
+                  বৈজ্ঞানিক নামঃ{" "}
+                  <Text style={{ fontStyle: "italic" }}>
+                    {item.scientificName.split(" ").slice(0, 2).join(" ")}
+                  </Text>{" "}
+                  {item.scientificName.split(" ").slice(2).join(" ")}
                 </Text>
                 <Text
                   style={{
@@ -130,7 +131,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  Category: {item.category}
+                  গোত্র: {item.family}
                 </Text>
                 <Text
                   style={{
@@ -141,7 +142,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  Method Of Propagation: {item.methodOfPropagation}
+                  উদ্ভিদের ধরণঃ {item.category}
                 </Text>
                 <Text
                   style={{
@@ -152,7 +153,18 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  Used Part: {item.usedPart}
+                  বংশবিস্তার পদ্ধতিঃ {item.methodOfPropagation}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 16,
+                    marginVertical: 4,
+                    paddingHorizontal: 20,
+                    textAlign: "center",
+                    fontWeight: "bold",
+                  }}
+                >
+                  ব্যবহৃত অংশঃ {item.usedPart}
                 </Text>
 
                 <Text
@@ -161,15 +173,15 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontWeight: "bold",
                     marginVertical: 4,
                     paddingHorizontal: 20,
-                    textAlign: "center",
+                    textAlign: "justify",
                   }}
                 >
                   ব্যবহার:{" "}
                   <Text style={{ fontSize: 14, fontWeight: "400" }}>
-                    {item.medicinalUsed}{" "}
+                    {item.medicinalUsed}
                   </Text>
                 </Text>
-                <View
+                {/* <View
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -200,7 +212,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                       <Text style={{ color: "blue" }}>www.bfri.gov.bd</Text>
                     </TouchableOpacity>
                   </Text>
-                </View>
+                </View> */}
               </ScrollView>
             </View>
           </View>

@@ -1,4 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Linking,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import React from "react";
 
 const HeaderDescription = () => {
@@ -17,7 +23,7 @@ const HeaderDescription = () => {
           color: "green",
         }}
       >
-        রোগ নিরাময় ঔষধি উদ্ভিদ
+        রোগ নিরাময়ে ঔষধি উদ্ভিদ
       </Text>
       <Text
         style={{
@@ -35,7 +41,14 @@ const HeaderDescription = () => {
           color: "green",
         }}
       >
-        বাংলাদেশ বন গবেষণা ইনিস্টিউট, চট্টগ্রাম
+        বাংলাদেশ বন গবেষণা ইনস্টিটিউট, চট্টগ্রাম।
+      </Text>
+      <Text>
+        <TouchableOpacity
+          onPress={() => Linking.openURL("http://www.bfri.gov.bd")}
+        >
+          <Text style={{ color: "green" }}>www.bfri.gov.bd</Text>
+        </TouchableOpacity>
       </Text>
     </View>
   );
