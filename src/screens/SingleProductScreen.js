@@ -74,25 +74,10 @@ const SingleProductScreen = ({ navigation, route }) => {
               alignItems: "center",
             }}
           >
-            <Text
-              style={{
-                fontSize: 23,
-                textAlign: "center",
-                fontWeight: "bold",
-                marginTop: 10,
-                paddingHorizontal: 10,
-                color: colors.COLOR_PRIMARY,
-              }}
-            >
-              <Text style={{ fontStyle: "italic" }}>
-                {item.scientificName.split(" ").slice(0, 2).join(" ")}
-              </Text>{" "}
-              {item.scientificName.split(" ").slice(2).join(" ")}
-            </Text>
-
             <View
               style={{
                 flex: 1,
+                paddingTop: 10,
               }}
             >
               <ScrollView showsVerticalScrollIndicator={false}>
