@@ -11,15 +11,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/app_logo_2.png",
+        "foregroundImage": "./assets/medicinal-plants.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.alreza89.medicinalplantsapp"
