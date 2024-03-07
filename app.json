@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/medicinal-plants.png",
+        "foregroundImage": "./assets/medicinal-plants2.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.alreza89.medicinalplantsapp"

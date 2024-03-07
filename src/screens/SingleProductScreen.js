@@ -102,10 +102,10 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  বাংলা নামঃ {item.bengaliName}
+                  <Text style={{ fontWeight: "bold" }}>বাংলা নামঃ</Text>{" "}
+                  <Text style={{}}>{item.bengaliName}</Text>
                 </Text>
                 <Text
                   style={{
@@ -113,10 +113,9 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  বৈজ্ঞানিক নামঃ{" "}
+                  <Text style={{ fontWeight: "bold" }}>বৈজ্ঞানিক নামঃ</Text>{" "}
                   <Text style={{ fontStyle: "italic" }}>
                     {item.scientificName.split(" ").slice(0, 2).join(" ")}
                   </Text>{" "}
@@ -128,10 +127,10 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  গোত্র: {item.family}
+                  <Text style={{ fontWeight: "bold" }}>গোত্র:</Text>{" "}
+                  <Text style={{}}>{item.family}</Text>
                 </Text>
                 <Text
                   style={{
@@ -139,10 +138,10 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  উদ্ভিদের ধরণঃ {item.category}
+                  <Text style={{ fontWeight: "bold" }}>উদ্ভিদের ধরণঃ</Text>{" "}
+                  <Text style={{}}>{item.category}</Text>
                 </Text>
                 <Text
                   style={{
@@ -150,10 +149,10 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  বংশবিস্তার পদ্ধতিঃ {item.methodOfPropagation}
+                  <Text style={{ fontWeight: "bold" }}>বংশবিস্তার পদ্ধতিঃ</Text>{" "}
+                  <Text style={{}}>{item.methodOfPropagation}</Text>
                 </Text>
                 <Text
                   style={{
@@ -161,10 +160,16 @@ const SingleProductScreen = ({ navigation, route }) => {
                     marginVertical: 4,
                     paddingHorizontal: 20,
                     textAlign: "center",
-                    fontWeight: "bold",
                   }}
                 >
-                  ব্যবহৃত অংশঃ {item.usedPart}
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    ব্যবহৃত অংশঃ{" "}
+                  </Text>
+                  <Text style={{}}>{item.usedPart}</Text>
                 </Text>
 
                 <Text
@@ -172,7 +177,7 @@ const SingleProductScreen = ({ navigation, route }) => {
                     fontSize: 16,
                     fontWeight: "bold",
                     marginVertical: 4,
-                    paddingHorizontal: 20,
+                    paddingHorizontal: 10,
                     textAlign: "justify",
                   }}
                 >

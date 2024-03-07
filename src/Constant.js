@@ -93,7 +93,7 @@ export const trees = [
     methodOfPropagation: "বীজ",
     usedPart: "সম্পূর্ণ উদ্ভিদ",
     medicinalUsed:
-      "ব্রংকাইটিস, নিউমোনিয়া, হাঁপানি, দাদ এবং ফুসফুসীয় যক্ষ্মা রোগে এ\nবৃক্ষ উপকারী।",
+      "ব্রংকাইটিস, নিউমোনিয়া, হাঁপানি, দাদ এবং ফুসফুসীয় যক্ষ্মা রোগে এ বৃক্ষ উপকারী।",
   },
   {
     id: 6,
@@ -755,7 +755,7 @@ export const trees = [
     id: 61,
     image: require("../assets/images/61.jpg"),
     bengaliName: "তেজবহল/ গুনুরি",
-    scientificName: "Cinnamomum camphora\n(L.) J.Presl.",
+    scientificName: "Cinnamomum camphora(L.) J.Presl.",
     family: "Lauraceae",
     category: "বৃক্ষ",
     methodOfPropagation: "বীজ",
@@ -1103,7 +1103,7 @@ export const trees = [
     scientificName: "Eclipta alba (L.) Hassk",
     family: "Asteraceae",
     category: "বীরুৎ",
-    methodOfPropagation: "বীজ/\nকাটিং",
+    methodOfPropagation: "বীজ/কাটিং",
     usedPart: "সম্পূর্ণ উদ্ভিদ",
     medicinalUsed:
       "পুরো বীরুৎটি টনিক এবং চুলের রঙ উন্নত করতে ব্যবহার করে এবং চুলের বৃদ্ধিতে ও সহায়তা করে।",
@@ -1306,7 +1306,7 @@ export const trees = [
     scientificName: "Hemidesmus indicus (L.) R.Br.",
     family: "Asclepiadaceae",
     category: "আরোহী",
-    methodOfPropagation: "বীজ/\nকাটিং",
+    methodOfPropagation: "বীজ/কাটিং",
     usedPart: "পাতা এবং মূল",
     medicinalUsed:
       "গাছের পাতা জন্ডিস, বাত, শরীর ব্যথা এবং পেটের ব্যথায় উপকারী। শিকড় পেটের পীড়ার চিকিৎসা, ফুসকুড়ি, সিফিলিসের উপসর্গগুলি প্রশমিত করতে এবং মানসিক শান্তির জন্য ব্যবহার করা হয়।",
@@ -2085,7 +2085,7 @@ export const trees = [
     scientificName: "Piper longum L.",
     family: "Piperaceae",
     category: "আরোহী",
-    methodOfPropagation: "বীজ/\nকাটিং",
+    methodOfPropagation: "বীজ/কাটিং",
     usedPart: "ফল",
     medicinalUsed:
       "অগ্নিমান্দ্য, ক্রনিক ব্রঙ্কাইটিস, কাশি, সর্দি এবং জয়েন্টে ব্যথার চিকিৎসায় এর ফল ব্যবহার করা হয়।",
@@ -2097,7 +2097,7 @@ export const trees = [
     scientificName: "Piper nigrum L.",
     family: "Piperaceae",
     category: "আরোহী",
-    methodOfPropagation: "বীজ/\nকাটিং",
+    methodOfPropagation: "বীজ/কাটিং",
     usedPart: "ফল",
     medicinalUsed:
       "সর্দি, কাশি, জ্বর, হাঁপানি, গলা ব্যথা এবং দাঁতের ব্যথা ও চর্মরোগের চিকিৎসায় এর ফল ব্যবহার করা হয়।",
@@ -2196,7 +2196,7 @@ export const trees = [
     methodOfPropagation: "বীজ",
     usedPart: "বীজ",
     medicinalUsed:
-      "এর বীজে মাদকদ্রব্যের বৈশিষ্ট্য রয়েছে এবং এটি আফিমের বিকল্প হিসেবে ব্যবহৃত\nহয়।",
+      "এর বীজে মাদকদ্রব্যের বৈশিষ্ট্য রয়েছে এবং এটি আফিমের বিকল্প হিসেবে ব্যবহৃত হয়।",
   },
   {
     id: 182,
